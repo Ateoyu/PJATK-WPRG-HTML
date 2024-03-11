@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zad5</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <label for="name">Name:
+            <input type="text" id="name" placeholder="Input Name here">
+        </label> <br>
+
+        <label for="favouriteColour">Favourite Colour:
+            <datalist id="favouriteColour">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Green"></option>
+                <option value="Yellow"></option>
+                <option value="Pink"></option>
+                <option value="Orange"></option>
+                <option value="Purple"></option>
+                <option value="Black"></option>
+                <option value="White"></option>
+            </datalist>
+
+            <input list="favouriteColour" placeholder="Choose favourite colour">
+        </label>
+        <input type="submit" name="Save" id="save1" value="Save"> <br>
+
+        <label for="value1">Value
+            <input type="range" name="value" id="value1" min="0" max="100">
+        </label> <br>
+        <input type="submit" name="Send" id="send1" value="Send"> <br> <br>
+
+        <label for="currentProgress1">Current progress:
+            <input type="range" name="currentProgress" id="currentProgress1" min="0" max="100">
+        </label>
+        <label for="overallProgress1">Overall progress:
+            <input type="range" name="overallProgress" id="overallProgress1" min="0" max="100">
+        </label> <br>
+        <input type="submit" name="Send" id="send2" value="Send"> <br> <br>
+
+        <label for="firstAndLastName1">Forename & Surname:
+            <input type="text" id="firstAndLastName1">
+        </label> <br> <br>
+        <input type="submit" name="Send" id="send3" value="Send">
+
+        <label for="hidden">
+            <input type="hidden" value="WAHAA, GOT U" id="hidden">
+        </label>
+    </form>
+</body>
+
+</html>
