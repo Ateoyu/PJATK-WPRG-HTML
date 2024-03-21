@@ -1,0 +1,21 @@
+h1 {
+    color: darksalmon;
+    font-family: "Baskerville Old Face", serif;
+}
+
+.baskervilleFont {
+    color: darksalmon;
+    font-family: "Baskerville Old Face", serif;
+}
+
+.trebuchetMSFont {
+    font-family: "Trebuchet MS";
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}

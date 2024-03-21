@@ -1,0 +1,25 @@
+.header {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.second {
+    text-align: left;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+
+.last {
+    font-size: 1.5em;
+    color: red;
+}
