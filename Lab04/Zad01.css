@@ -1,0 +1,31 @@
+.div1 {
+    width: 50%;
+    background-color: aquamarine;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.div2 {
+    background-color: aqua;
+    border: 4px solid grey;
+    padding: 20px;
+}
+
+.div3 {
+    border: 2px solid;
+    background-color: white;
+}
+
+.div4 {
+    background-color: darkgray;
+    margin: 2px;
+    border: 2px solid black;
+}
+
+h2 {
+    margin: 4px;
+}
+
+p {
+    margin: 4px;
+}
