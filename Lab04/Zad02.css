@@ -1,23 +1,35 @@
 h1 {
+    font-family: Futura, sans-serif;
     text-align: center;
+    letter-spacing: 0.5em;
+    color: darkgreen;
 }
 
 h2  {
+    font-family: Futura, sans-serif;
+    letter-spacing: 0.15em;
     color: white;
     margin-left: 15px;
 }
 
 .a1 {
+    font-family: Futura, sans-serif;
+    font-style: italic;
+    text-decoration: none;
     color: darkgreen;
 }
 
 .a2 {
+    font-family: Futura, sans-serif;
+    text-decoration: none;
     color: black;
 }
 
 .div1 {
-    margin: auto;
-    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 25em;
     padding: 1px;
     background-color: darkgreen;
     box-shadow: 5px 5px 30px 5px grey;
@@ -30,5 +42,12 @@ h2  {
 }
 
 address {
+    font-family: Futura, sans-serif;
     text-align: right;
+    text-decoration: none;
+}
+
+.street {
+    color: darkgreen;
+    text-decoration: none;
 }

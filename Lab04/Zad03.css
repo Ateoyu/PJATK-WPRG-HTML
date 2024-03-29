@@ -1,0 +1,60 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.header {
+    box-shadow: 0 5px 5px 1px darkgrey;
+    position: fixed;
+    height: 5em;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: #e8e2d9;
+    text-align: center;
+
+}
+
+.addItem {
+    margin: 7em;
+    padding: 40px;
+    background-color: #F7F3F3;
+    box-shadow: 0 5px 5px 1px darkgrey;
+}
+
+.inputLabels {
+    float: left;
+    text-align: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+ ul{
+     list-style-type: none;
+ }
+
+.saveButton {
+    float: right;
+}
+
+.tableDiv {
+    background-color: #F7F3F3;
+    padding: 20px;
+    box-shadow: 0 5px 5px 1px darkgrey;
+    margin: 7em;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+thead {
+    background-color: #e8e2d9;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #F1ECEA;
+}
+
+
