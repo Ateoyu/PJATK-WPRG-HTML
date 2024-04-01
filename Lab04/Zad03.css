@@ -16,10 +16,19 @@ body {
 }
 
 .addItem {
-    margin: 7em;
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 1000px;
     padding: 40px;
-    background-color: #F7F3F3;
-    box-shadow: 0 5px 5px 1px darkgrey;
+    background-color: #f6f3f3;
+    box-shadow: 0 5px 5px 1px lightgrey;
+}
+
+fieldset {
+    border-color: #eeeae6;
+    padding: 20px 10px;
 }
 
 .inputLabels {
@@ -29,23 +38,32 @@ body {
     margin-right: 10px;
 }
 
- ul{
-     list-style-type: none;
- }
+ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
 
 .saveButton {
     float: right;
+    margin: 0;
 }
 
 .tableDiv {
-    background-color: #F7F3F3;
+    background-color: #f6f3f3;
+    box-sizing: border-box;
     padding: 20px;
-    box-shadow: 0 5px 5px 1px darkgrey;
-    margin: 7em;
+    box-shadow: 0 5px 5px 1px lightgrey;
+    max-width: 1000px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 table {
-    border-spacing: 5px;
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
 }
 
 thead {
@@ -53,8 +71,42 @@ thead {
     text-align: left;
 }
 
+th, td {
+    padding: 8px;
+}
+
 tr:nth-child(even) {
     background-color: #F1ECEA;
 }
 
+table #firstColumnInTable {
+    width: 50px;
+}
 
+table td:first-child {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #c3beb7;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+}
+
+input[type=text] {
+    border-style: solid;
+    border-color: #f2eeeb;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 5px;
+
+}
+
+legend {
+    padding: 0 15px;
+}
+
+li {
+    padding: 8px;
+}
