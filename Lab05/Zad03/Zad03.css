@@ -2,62 +2,118 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: "Segoe UI", sans-serif;
 }
 
-#flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+h1, h2, h3 {
     margin: 0;
+    font-weight: normal;
 }
 
-.header {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background-color: rgb(0, 0, 0, 75%);
-}
-
-.header1 {
-    text-align: start;
-}
-
-img {
-    position: absolute;
-    z-index: -1;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.imageHeader {
-    background-color: rgba(0,0,0,0%);
-}
-
-#flex-container3 {
+#flex-header {
+    position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
-.tileTop {
+    background-color: rgba(0, 0, 0, 50%);
     width: 100%;
-    height: 100px;
-    background-color: #414F58;
+    height: 70px;
+    box-shadow:0 1px 5px gray;
+
+    justify-content: space-evenly;
+
+    z-index: +1;
 }
 
-.tile {
-    background-color: #ABD7EF;
-    max-width: 300px;
-    margin: 10px 30px;
+.top-nav {
+    align-content: center;
+    margin: 0 20px;
+    flex: 1;
+    color: white;
 }
 
-
-.tile > h3 {
-    text-align: left;
+.logo {
+    h1 {
+        font-weight: bold;
+    }
 }
 
-.tile > p {
-    text-align: justify;
+/*Funny Stuff Begins (i want death)*/
+
+#flex-headerImage {
+    background-image: url("https://c.wallhere.com/photos/7e/fb/sky_clouds_fishing_anime_girls_anime_water_4K_ultrawide-1946517.jpg!d");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .headerImage-Text {
+        text-align: center;
+        color: white;
+        text-shadow: 0 2px 4px black;
+        margin-top: 70px;
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
 }
+
+#flex-contentBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        margin: 10px 10px;
+        position: relative;
+        box-shadow: 0 0 10px gray;
+
+        .topBox {
+            background-color: #ABD7EF;
+            position: relative;
+            height: 50%;
+
+            p {
+                text-align: right;
+                margin: 0 5px 5px;
+                top: 90%;
+                position: relative;
+            }
+        }
+
+        .bottomBox {
+            background-color: #414F58;
+            height: 50%;
+            position: relative;
+        }
+
+        .bottomBoxText {
+            padding: 10px;
+            color: #dbe1e4;
+        }
+
+        h3 {
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .box2 {
+        max-width: 460px;
+    }
+}
+
