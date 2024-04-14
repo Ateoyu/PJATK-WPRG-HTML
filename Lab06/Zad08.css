@@ -4,9 +4,22 @@ html, body {
     height: 100%;
 }
 
-.cappyImg {
+#flexContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
 
+.cappyImg {
+    width: 100%;
+}
+
+.carrot {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 50%;
+    right: 0;
+    top: 120px;
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-$inputString = fgets(STDIN);
+$inputString = readline("Enter the input: ");
 $inputString = strtolower($inputString);
 $vowels = ['a','e','i','o','u','y'];
 $inputStringLength = strlen($inputString);
