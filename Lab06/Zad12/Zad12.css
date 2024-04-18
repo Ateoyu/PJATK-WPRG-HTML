@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shape {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px 100px / 120px;
+}
+
+.shape0 {
+    background-color: black;
+}
+
+.shape1 {
+    background-color: red;
+}
+
+.shape2 {
+    background-color: green;
+}
+
+.shape3 {
+    background-color: blue;
+}
+
+.shape4 {
+    background-color: magenta;
+}
+
+.shape5 {
+    background-color: cyan;
+}
+
+.shape6 {
+    background-color: hotpink;
+}
+
+.shape7 {
+    background-color: yellow;
+}
+
+.shape8 {
+    background-color: brown;
+}
+
+.shape9 {
+    background-color: blueviolet;
+}

@@ -9,7 +9,8 @@
 
 <?php
 
-function generateRandomValues(): array {
+function generateRandomValues(): array
+{
     $randArray = [];
     while (count($randArray) < 3) {
         $randValue = rand(1, 9);
@@ -19,10 +20,11 @@ function generateRandomValues(): array {
     }
     return $randArray;
 }
+
 ?>
 
 <div id="flexContainer">
-<?php
+    <?php
     foreach (generateRandomValues() as $randNum) {
         echo match ($randNum) {
             1 => '<img src="Capy01.jpeg" alt="Capy Bath"/>',
@@ -37,8 +39,8 @@ function generateRandomValues(): array {
             default => 'Error',
         };
     }
-?>
+    ?>
 </div>
-    
+
 </body>
 </html>
