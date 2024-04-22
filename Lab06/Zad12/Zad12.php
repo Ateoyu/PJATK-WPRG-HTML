@@ -14,7 +14,7 @@ $minute = date('i');
 $minuteArr = str_split($minute);
 
 //I don't know why match case doesn't work here but switch does so yea
-//Technically task asks for 3 variants but here you have 9, bigger the better right? :D
+//Technically task asks for 3 variants but here you have 10, bigger the better right? :D
 switch ($minute[1]) {
     case 0:
         echo '<div class="shape shape0"> </div>';
