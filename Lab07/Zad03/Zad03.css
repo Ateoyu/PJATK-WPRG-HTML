@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+fieldset {
+    margin: 20px 80px;
+    padding: 12px 12px;
+    background-color: #B5C0D0;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 black;
+}
+
+#flexContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        input, select {
+            margin: 5px 0;
+            border: none;
+            height: 20px;
+            border-radius: 5px;
+            background-color: #fbf7f5;
+            box-shadow: 1px 1px 0 black;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        button {
+            margin: 5px ;
+            height: 2em;
+            width: 200px;
+            background-color: #CCD3CA;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 0 black;
+            align-self: flex-end;
+        }
+    }
+
+    .answerOutsideDiv {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        height: 200px;
+        margin: 0 80px;
+        background-color: #F5E8DD;
+        justify-items: center;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0 black;
+    }
+
+    .answerInsideDiv {
+        position: relative;
+        background-color: #EED3D9;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+

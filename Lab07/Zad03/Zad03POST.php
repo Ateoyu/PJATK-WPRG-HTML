@@ -27,9 +27,7 @@ match ($_POST['operator']) {
 function union($set1, $set2): void
 {
     $unionArray = array_unique(array_merge($set1, $set2));
-    foreach ($unionArray as $item) {
-        echo "$item, ";
-    }
+    echo '<p> $unionArray </p>';
 }
 
 function except($set1, $set2): void
