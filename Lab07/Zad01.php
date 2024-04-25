@@ -14,7 +14,7 @@ do {
     }
 } while(!is_numeric($nPosition));
 
- $array[$nPosition] = '$';
+ array_splice($array, $nPosition, 0, '$');
 
  print_r($array)
 
