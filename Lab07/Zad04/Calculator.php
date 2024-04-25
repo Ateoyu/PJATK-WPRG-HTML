@@ -42,7 +42,7 @@
                 <label for="advancedOperation">Operation</label>
             </div>
             <div>
-                <input type="number" id="advancedNum" name="advancedNum" placeholder="Enter first number">
+                <input type="text" id="advancedNum" name="advancedNum" placeholder="Enter first number">
 
                 <select id="advancedOperation" name="operation">
                     <option value="Cos">Cos</option>
@@ -161,7 +161,8 @@
                     "Hex->Dec" => hexToDec($_POST["advancedNum"]),
                     default => 'ERROR'
                 };
-            } catch (Exception $e) {
+            } catch
+            (Exception $e) {
                 echo "Error: " . $e->getMessage();
             }
         }
