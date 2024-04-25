@@ -6,7 +6,7 @@ html, body {
 }
 
 fieldset {
-    margin: 20px 80px;
+    margin: 20px auto;
     padding: 12px 12px;
     background-color: #B5C0D0;
     width: 100%;
@@ -40,7 +40,7 @@ fieldset {
         }
 
         select {
-            width: 200px;
+            width: 150px;
         }
 
         button {
@@ -58,19 +58,26 @@ fieldset {
     .answerOutsideDiv {
         position: relative;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         max-width: 500px;
-        height: 200px;
-        margin: 0 80px;
+        height: 100px;
+        margin: 0 auto;
         background-color: #F5E8DD;
         justify-items: center;
-        padding: 25px;
         border-radius: 10px;
         box-shadow: 5px 5px 0 black;
+
+        h2 {
+            margin: 5px 0;
+        }
     }
 
     .answerInsideDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
         background-color: #EED3D9;
         width: 100%;

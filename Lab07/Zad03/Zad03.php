@@ -29,6 +29,7 @@
     </fieldset>
 
     <div class="answerOutsideDiv">
+        <h2>Answer</h2>
         <?php
 
         $seqA = $_POST['SequenceA'];
