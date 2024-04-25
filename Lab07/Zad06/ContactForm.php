@@ -77,18 +77,14 @@ function validatePhoneNumber($phoneNumber): string
 
 function validateCheckbox($checkbox1, $checkbox2): string
 {
-    if (isset($_POST['checkbox1'], $_POST['checkbox2'])) return $checkbox1 . $checkbox2;
-    else if (isset($_POST['checkbox1']) && !isset($_POST['checkbox2'])) return $checkbox1 . "off";
-    else if (!isset($_POST['checkbox1']) && isset($_POST['checkbox2'])) return "off" . $checkbox2;
-    return "ERROR";
-}
-
-function displayCheckbox($checkbox): string
-{
-    if ($checkbox == "onon") return "Option 1 + Option 2";
-    else if ($checkbox == "onoff") return "Option 1";
-    else if ($checkbox == "offon") return "Option 2";
-    return "ERROR";
+    if ($checkbox1 == 'on' && $checkbox2 == 'on') {
+        return 'Option 1 + Option 2';
+    } elseif ($checkbox1 == 'on') {
+        return 'Option 1';
+    } elseif ($checkbox2 == 'on') {
+        return 'Option 2';
+    }
+    return 'ERROR';
 }
 
 function displayRadios($radio): string
@@ -107,14 +103,14 @@ function displayRadios($radio): string
     <h1>Form Info:</h1>
     <ul>
         <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['radio'])) {
-            if (isset($_POST["fullname"]) + isset($_POST["email"]) + isset($_POST["phoneNumber"]) + isset($_POST["topic"]) + isset($_POST["message"]) + isset($_POST["checkbox1"]) + isset($_POST["checkbox2"])) {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (isset($_POST["fullname"]) + isset($_POST["email"]) + isset($_POST["phoneNumber"]) + isset($_POST["topic"]) + isset($_POST["message"])) {
                 echo "<li>" . $_POST['fullname'] . "</li>";
                 echo "<li>" . validateEmail($_POST['email']) . "</li>";
                 echo "<li>" . validatePhoneNumber($_POST['phoneNumber']) . "</li>";
                 echo "<li>" . $_POST['topic'] . "</li>";
                 echo "<li>" . $_POST['message'] . "</li>";
-                echo "<li>" . displayCheckbox(validateCheckbox(isset($_POST['checkbox1']) , isset($_POST['checkbox2']))) . "</li>";
+                echo "<li>" . validateCheckbox(isset($_POST['checkbox1']), isset($_POST['checkbox2'])) . "</li>";
                 echo "<li>" . displayRadios($_POST['radio']) . "</li>";
             }
         }
