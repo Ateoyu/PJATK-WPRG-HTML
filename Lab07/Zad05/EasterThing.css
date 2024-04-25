@@ -1,0 +1,69 @@
+html,body {
+    margin: 0;
+    font-family: "Baskerville Old Face", serif;
+    background-color: #cdc8b2;
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #4e4b43;
+    color: #dad4bd;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    margin: 0 0 20px 0;
+
+    h1 {
+        margin: 8px 0;
+        letter-spacing: 2px;
+    }
+}
+.inputContent {
+    max-width: 640px;;
+    width: 100%;
+    background-color: #dad4bd;
+    color: #dad4bd;
+}
+
+.test {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        background-color: #4E4B43;
+    }
+
+    input[type = number] {
+        border-collapse: collapse;
+        border: none;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #b4af9c;
+    }
+
+    ::placeholder {
+        color: #4d4b43;
+        font-family: "Baskerville Old Face", serif;
+        font-size: smaller;
+    }
+
+    button[type = submit] {
+        margin-bottom: 10px;
+        border-collapse: collapse;
+        border: none;
+        padding: 5px;
+        background-color: #635f55;
+        color: #dad4bd;
+        font-size: x-small;
+    }
+}

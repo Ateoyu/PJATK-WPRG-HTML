@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Baskerville Old Face", serif;
+}
+
+::placeholder, option, select, button {
+    font-family: "Baskerville Old Face", serif;
+}
+
+#uhm {
+    width: 225px;
+}
+
+#contactField {
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+        margin-bottom: 10px;
+    }
+
+    .checkboxes, .radios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
