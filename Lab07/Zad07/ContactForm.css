@@ -3,32 +3,95 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Baskerville Old Face", serif;
+    font-family: arial, sans-serif;
+    background-color: #cdc8b0;
+    color: #4D4B42;
 }
 
 ::placeholder, option, select, button {
-    font-family: "Baskerville Old Face", serif;
+    font-family: arial, sans-serif;
+    color: #4d4b43;
 }
 
 #uhm {
-    width: 225px;
+    display: flex;
+    flex-direction: row;
 }
 
 #contactField {
-    padding: 10px;
+    background-color: #dad4bc;
+    border-collapse: collapse;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 225px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
 
-    input, select {
+    .formHeader{
+        background-color: #4d4b43;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formContent {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    h2 {
+        margin: 5px 0;
+        color: #DAD4BB;
+        font-weight: normal;
+    }
+
+    input, select, textarea {
         margin-bottom: 10px;
+        border: 1px solid #b4af9a;
+        background-color: #dad4bc;
+        padding: 3px;
+    }
+
+    textarea {
+        height: 4em;
     }
 
     .checkboxes, .radios {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    button {
+        background-color: #4d4b43;
+        border: none;
+        color: #dad4bc;
+        height: 2em;
+    }
+}
+
+.formResult {
+    display: flex;
+    flex-direction: column;
+    max-width: 225px;
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    background-color: #dad4bc;
+
+    .formResultHeader {
+        background-color: #4d4b43;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 0 0 0 0;
+        font-weight: normal;
+        color: #dad4bc;
     }
 }
