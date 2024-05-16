@@ -1,0 +1,45 @@
+#form {
+    background-color: lightgray;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formHeader {
+    background-color: coral;
+    padding: 10px;
+
+    h2 {
+        margin: 0;
+    }
+}
+.formContent {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.formContent2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: lightseagreen;
+    padding: 10px;
+}
+
+#resultDiv {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+
+    p {
+        margin: 5px;
+    }
+}

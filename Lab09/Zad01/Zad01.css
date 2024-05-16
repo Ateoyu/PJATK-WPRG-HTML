@@ -1,0 +1,47 @@
+html, body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#form {
+    padding: 20px;
+    margin: 0;
+    border: none;
+    background-color: lightblue;
+    border-radius: 15px 15px 0 0;
+}
+
+.formHeader {
+    h2 {
+        margin: 0 0 5px 0;
+    }
+}
+
+.formContent {
+    display: flex;
+    flex-flow: column wrap;
+
+    button{
+        margin: 10px 0 0 0;
+        align-self: center;
+        width: 50%;
+    }
+}
+
+.radios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.answerDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
