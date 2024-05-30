@@ -1,0 +1,19 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 80ch;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+

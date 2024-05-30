@@ -1,0 +1,107 @@
+html,body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-shadow: grey 2px 2px;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+#shopItemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 250px;
+        background-color: #fffff2;
+        color: black;
+        border: 3px solid black;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 10px;
+
+        img {
+            width: 100%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        h3, p {
+            margin: 0;
+            text-align: center;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+        }
+    }
+
+    .itemGoat {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+
+        img {
+            width: 500px
+        }
+
+        h3, p {
+            margin-left: 10px;
+        }
+
+        button[type="submit"] {
+            margin-left: 10px;
+            width: 100%;
+        }
+    }
+}
+
+.buyButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button[type="submit"] {
+        width: 600px;
+        height: 40px;
+        background-color: lightcoral;
+        color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+}
