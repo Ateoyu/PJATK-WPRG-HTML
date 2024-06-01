@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#carInventoryFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 15px;
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 10px 0 5px 0;
+    }
+
+    select {
+        border: none;
+        border-radius: 5px;
+    }
+
+    button[type="submit"] {
+        border: none;
+        border-radius: 5px;
+    }
+
+    #detailForm {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        input[type = text] {
+            box-sizing: border-box;
+            margin: 2px 0 5px 0;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type = number] {
+            margin: 2px 0 5px 0;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #exchangeRatePLN {
+            margin-bottom: 10px;
+        }
+
+        #firstOwnerCheckbox {
+            margin-bottom: 10px;
+        }
+
+        .checkboxes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #addCar {
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 100%;
+            height: 2rem;
+        }
+    }
+}
