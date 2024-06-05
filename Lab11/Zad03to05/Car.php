@@ -1,7 +1,6 @@
 <?php
 
 class Car {
-    private static int $count = 0;
     private string $model;
     private float $price;
     private float $exchangeRate;
@@ -10,7 +9,10 @@ class Car {
         $this->model = $model;
         $this->price = $price;
         $this->exchangeRate = $exchangeRate;
-        self::$count++;
+        if (!isset($_SESSION['carCount'])) {
+            $_SESSION['carCount'] = 0;
+        }
+        $_SESSION['carCount']++;
     }
 
     function value(): float|int {
@@ -22,7 +24,11 @@ class Car {
     }
 
     public static function getCount(): int {
-        return self::$count;
+        if (!isset($_SESSION['carCount'])) {
+            return 0;
+        } else {
+            return $_SESSION['carCount'];
+        }
     }
 
     public function getExchangeRate(): float {
@@ -38,7 +44,7 @@ class Car {
     }
 
     public static function setCount(int $count): void {
-        self::$count = $count;
+        $_SESSION['carCount'] = isset($_SESSION['carCount']) ? $count : 0;
     }
 
     public function setExchangeRate(float $exchangeRate): void {

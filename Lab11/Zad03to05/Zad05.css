@@ -75,4 +75,35 @@ html, body {
             height: 2rem;
         }
     }
+
+    #carList {
+        padding: 10px;
+        background-color: lightcoral;
+        margin-top: 15px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        width: 100%;
+
+        ul {
+            margin: 10px 0 5px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            button {
+                width: 75px;
+            }
+        }
+
+        p {
+            margin: 5px 0 0 0;
+        }
+
+    }
 }
