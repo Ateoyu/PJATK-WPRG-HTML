@@ -18,8 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addToCart'])) {
     addToBasket($chair_ID);
 }
 
-echo print_r($_SESSION['basket'], true);
-
 ?>
 
 

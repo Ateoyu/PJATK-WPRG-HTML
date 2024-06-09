@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#flexMainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 80ch;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    border: 2px solid black;
+
+    legend {
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0 0 10px 0;
+    }
+
+
+}
+
+table {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 80ch;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-collapse: collapse;
+
+    thead {
+        background-color: black;
+        color: white;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 0;
+        }
+    }
+    tr:nth-child(even) {
+        background-color: #cdcdcd;
+    }
+
+}
