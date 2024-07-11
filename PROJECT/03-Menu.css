@@ -1,0 +1,359 @@
+html, body {
+    margin: 0;
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    width: 100%;
+
+    button {
+        font-family: "Gabriela", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    overflow: hidden; /* Hide any overflowing content */
+    position: fixed; /* Required for positioning the SVG [DO NOT TOUCH] */
+    width: 100vw;
+    z-index: 5;
+
+    #headerNav {
+        position: fixed;
+        top: 0;
+        display: grid;
+        align-items: center;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+
+        #headerNameLink {
+            grid-row: 1;
+            grid-column: 2;
+            justify-self: center;
+            width: fit-content;
+            text-decoration: none;
+        }
+
+        a, form {
+            grid-row: 1;
+            grid-column: 3;
+            justify-self: flex-end;
+            width: fit-content;
+            margin: 0;
+        }
+    }
+}
+
+#headerName {
+    grid-row: 1;
+    grid-column: 2;
+    background-color: #84542c;
+    justify-self: flex-end;
+    width: fit-content;
+    margin: auto;
+    border: 5px solid #673F1E;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: white;
+    }
+}
+
+.loginLogoutButton {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #596A50;
+    border: 4px solid black;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.loginLogoutButton:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+svg {
+    position: absolute; /* Change this and everything dies :D */
+    left: 50%;
+    transform: translateX(-50%); /* Center the SVG horizontally */
+    height: 100%; /* Ensure the SVG covers the entire container height */
+    width: auto; /* Allow the SVG to scale proportionally */
+    max-width: none; /* Ensure the SVG doesn't get scaled down */
+    z-index: -1;
+
+    g {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+    }
+
+    #pinkWave {
+    }
+
+    #greenWave {
+
+    }
+}
+
+#sideNav {
+    position: fixed;
+    top: 0;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BF9B78;
+    height: 100vh;
+    width: 200px;
+    z-index: 4;
+    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+
+    h2 {
+        margin: 0 10px;
+        width: fit-content;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+
+            form {
+                margin: 0;
+
+                button {
+                    position: relative;
+                    width: 100%;
+                    font-size: 1.25rem;
+
+                    padding: 10px;
+
+                    background-color: #84542c;
+
+                    border-radius: 10px;
+                    border: 4px solid #673f1e;
+                    color: black;
+
+                    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+                }
+
+                button:hover {
+                    transform: scale(1.05);
+                    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+
+#mainMenu {
+    position: relative;
+    z-index: 3;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+    padding: 150px 20px 95px 220px;
+
+    box-sizing: border-box;
+
+    .categoryContainer {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            background: #e6cfc8;
+            padding: 10px 10px;
+
+            border-radius: 20px;
+            border: 4px solid #84542c;
+
+            label {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+
+            button {
+                margin: 0 0 0 10px;
+                padding: 2px 5px;
+                font-size: 1.1rem;
+                border-radius: 10px;
+                background-color: #596A50;
+                color: white;
+                border: 2px solid black;
+
+                cursor: pointer;
+
+                transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+            button:hover {
+                transform: scale(1.05);
+                box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .foodItem {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        background: #596a50;
+        color: white;
+
+        border: 2px solid black;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+
+        height: 300px;
+
+        .imageContainer {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 0 0 30px 30px;
+            border-bottom: 2px solid black;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        .foodInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            text-align: center;
+
+
+            h3, p {
+                margin: 0;
+                height: 100%;
+            }
+
+            p {
+                align-self: flex-end;
+                background: white;
+                padding: 5px 15px;
+                margin-top: 10px;
+                border-radius: 20px;
+                color: black;
+            }
+        }
+    }
+
+    .foodItem:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 0 black;
+    }
+}
+
+.basketDiv {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #E8D1CA;
+    width: 100vw;
+    height: 75px;
+    padding: 10px;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+
+    img {
+        height: 100%;
+    }
+
+    h2 {
+        margin: 0 0 0 10px;
+    }
+
+    .checkoutButtonForm {
+        position: relative;
+        margin: 0 0 0 auto;
+    }
+
+    button {
+        width: fit-content;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        background-color: #596A50;
+        color: white;
+        border: 4px solid black;
+        box-sizing: border-box;
+        margin: 0 0 0 auto;
+
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 0 black;
+    }
+}
